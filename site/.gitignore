@@ -9,3 +9,4 @@ out/
 next-env.d.ts
 # generated at build by scripts/sync-data.mjs from the package corpus
 data/freshness.json
+.vercel

@@ -177,7 +177,7 @@ export default async function Page() {
                 <p className="mt-4 font-mono text-[12.5px] text-fg-mute">
                   {data.docCount} docs · {data.topics.length} topic{data.topics.length === 1 ? "" : "s"} · published to npm
                 </p>
-                <a href={`${REPO_URL}/blob/master/CHANGELOG.md`} className="mt-[22px] inline-flex items-center gap-2 border-b border-accent pb-0.5 font-mono text-[13.5px] font-semibold text-accent no-underline">
+                <a href={`${REPO_URL}/blob/main/CHANGELOG.md`} className="mt-[22px] inline-flex items-center gap-2 border-b border-accent pb-0.5 font-mono text-[13.5px] font-semibold text-accent no-underline">
                   See the changelog →
                 </a>
               </div>
