@@ -6,7 +6,3 @@ dist/
 .env.*
 *.tgz
 coverage/
-
-# Local release tooling (not part of the public repo)
-/scripts/preflight.mjs
-/PREFLIGHT.md

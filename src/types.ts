@@ -12,9 +12,9 @@ export interface DocMeta {
   sourceUrl: string;
   /** ISO date the content was last fetched from source. */
   fetchedAt: string;
-  /** True only after a reviewer ran the Self-Check Protocol (docs/CORPUS_VERIFICATION.md). */
+  /** True only after a maintainer verified the document against its primary source. */
   verified: boolean;
-  /** ISO date the verification log was recorded. Present iff verified is true. */
+  /** ISO date the verification was recorded. Present iff verified is true. */
   verifiedAt?: string;
   /** Markdown filename inside corpus/, relative to the manifest. */
   file: string;
