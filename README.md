@@ -2,6 +2,10 @@
 
 **Fresh, source-verified docs for building MCP servers and Claude agents — served straight to your AI coding agent over MCP.**
 
+[![npm](https://img.shields.io/npm/v/agentdocs)](https://www.npmjs.com/package/agentdocs)
+[![license: MIT](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
+[![Model Context Protocol](https://img.shields.io/badge/MCP-server-blue)](https://modelcontextprotocol.io)
+
 Coding agents hallucinate on fast-moving APIs like the Model Context Protocol and the Claude Agent SDK: training data lags the spec, so you get plausible-but-wrong imports, deprecated patterns, and invented options. `agentdocs` is a local MCP server that gives your agent a curated, **source-verified** corpus to search instead of guessing.
 
 - 🔎 Three tools: `list_topics`, `search_docs`, `get_doc`
@@ -16,7 +20,7 @@ Requires Node.js 18+.
 ### Claude Code
 
 ```bash
-claude mcp add agentdocs -- npx -y agentdocs
+claude mcp add agentdocs -- npx -y agentdocs@latest
 ```
 
 ### Cursor / other MCP clients (`mcp.json`)
@@ -26,7 +30,7 @@ claude mcp add agentdocs -- npx -y agentdocs
   "mcpServers": {
     "agentdocs": {
       "command": "npx",
-      "args": ["-y", "agentdocs"]
+      "args": ["-y", "agentdocs@latest"]
     }
   }
 }
@@ -48,6 +52,13 @@ answer from the verified corpus.
 
 The Model Context Protocol (spec 2025-11-25) and building MCP servers / Claude agents.
 Corpus grows over time; run `list_topics` for the current set.
+
+## Freshness
+
+Every document records the date it was last verified against its primary source. Sources
+are diffed on a regular cadence; when one drifts, the affected doc is re-verified and a new
+version is published. Using `agentdocs@latest` (as above) keeps you on the current corpus.
+See [CHANGELOG.md](./CHANGELOG.md) for what changed and when.
 
 ## Development
 
