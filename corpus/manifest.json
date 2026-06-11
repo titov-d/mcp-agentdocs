@@ -81,6 +81,36 @@
       "verified": true,
       "verifiedAt": "2026-06-11",
       "file": "claude-mcp-connector.md"
+    },
+    {
+      "id": "mcp-sampling",
+      "title": "MCP Sampling — server-initiated LLM completions via the client",
+      "topic": "mcp",
+      "sourceUrl": "https://modelcontextprotocol.io/specification/2025-11-25/client/sampling",
+      "fetchedAt": "2026-06-11",
+      "verified": true,
+      "verifiedAt": "2026-06-11",
+      "file": "mcp-sampling.md"
+    },
+    {
+      "id": "mcp-elicitation",
+      "title": "MCP Elicitation — server requests for additional user input",
+      "topic": "mcp",
+      "sourceUrl": "https://modelcontextprotocol.io/specification/2025-11-25/client/elicitation",
+      "fetchedAt": "2026-06-11",
+      "verified": true,
+      "verifiedAt": "2026-06-11",
+      "file": "mcp-elicitation.md"
+    },
+    {
+      "id": "mcp-roots",
+      "title": "MCP Roots — client-exposed filesystem boundaries",
+      "topic": "mcp",
+      "sourceUrl": "https://modelcontextprotocol.io/specification/2025-11-25/client/roots",
+      "fetchedAt": "2026-06-11",
+      "verified": true,
+      "verifiedAt": "2026-06-11",
+      "file": "mcp-roots.md"
     }
   ]
 }

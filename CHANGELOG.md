@@ -9,6 +9,8 @@ and "recent verifications" on the website are derived from this file and from
 
 ### Added
 
+- MCP client-feature docs (topic `mcp`): **sampling** (server-initiated LLM completions, incl.
+  tool use), **elicitation** (form + URL mode), and **roots**. Corpus now 11 documents.
 - Claude API MCP connector documentation (topic `claude-mcp`): the Messages API
   MCP connector — beta header, server/toolset configuration, response blocks,
   limitations, OAuth, and remote third-party servers. Corpus now 8 documents.
