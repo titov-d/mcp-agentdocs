@@ -1,6 +1,7 @@
 {
   "name": "@titov-d/agentdocs",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "mcpName": "io.github.titov-d/agentdocs",
   "description": "Fresh, curated, source-verified docs for building MCP servers and Claude agents — served to your AI coding agent over MCP.",
   "license": "MIT",
   "author": "Dmitry Titov",
