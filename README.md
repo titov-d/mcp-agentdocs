@@ -57,7 +57,7 @@ Corpus grows over time; run `list_topics` for the current set.
 
 Every document records the date it was last verified against its primary source. Sources
 are diffed on a regular cadence; when one drifts, the affected doc is re-verified and a new
-version is published. Using `agentdocs@latest` (as above) keeps you on the current corpus.
+version is published. Using `mcp-agentdocs@latest` (as above) keeps you on the current corpus.
 See [CHANGELOG.md](./CHANGELOG.md) for what changed and when.
 
 ## Development
