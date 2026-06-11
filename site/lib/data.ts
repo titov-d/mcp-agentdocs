@@ -1,7 +1,7 @@
 import fallback from "../data/freshness.json";
 
-const CDN_MANIFEST = "https://cdn.jsdelivr.net/npm/@titov-d/agentdocs@latest/corpus/manifest.json";
-const CDN_CHANGELOG = "https://cdn.jsdelivr.net/npm/@titov-d/agentdocs@latest/CHANGELOG.md";
+const CDN_MANIFEST = "https://cdn.jsdelivr.net/npm/mcp-agentdocs@latest/corpus/manifest.json";
+const CDN_CHANGELOG = "https://cdn.jsdelivr.net/npm/mcp-agentdocs@latest/CHANGELOG.md";
 
 export interface DocEntry {
   id: string;

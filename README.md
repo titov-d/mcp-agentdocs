@@ -2,7 +2,7 @@
 
 **Fresh, source-verified docs for building MCP servers and Claude agents — served straight to your AI coding agent over MCP.**
 
-[![npm](https://img.shields.io/npm/v/@titov-d/agentdocs)](https://www.npmjs.com/package/@titov-d/agentdocs)
+[![npm](https://img.shields.io/npm/v/mcp-agentdocs)](https://www.npmjs.com/package/mcp-agentdocs)
 [![license: MIT](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 [![Model Context Protocol](https://img.shields.io/badge/MCP-server-blue)](https://modelcontextprotocol.io)
 
@@ -20,7 +20,7 @@ Requires Node.js 18+.
 ### Claude Code
 
 ```bash
-claude mcp add agentdocs -- npx -y @titov-d/agentdocs@latest
+claude mcp add agentdocs -- npx -y mcp-agentdocs@latest
 ```
 
 ### Cursor / other MCP clients (`mcp.json`)
@@ -30,7 +30,7 @@ claude mcp add agentdocs -- npx -y @titov-d/agentdocs@latest
   "mcpServers": {
     "agentdocs": {
       "command": "npx",
-      "args": ["-y", "@titov-d/agentdocs@latest"]
+      "args": ["-y", "mcp-agentdocs@latest"]
     }
   }
 }
