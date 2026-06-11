@@ -7,13 +7,13 @@ export const revalidate = 3600;
 
 const REPO_URL = "https://github.com/titov-d/agentdocs";
 const GITHUB_PROFILE = "https://github.com/titov-d";
-const NPM_URL = "https://www.npmjs.com/package/agentdocs";
-const INSTALL_CMD = "claude mcp add agentdocs -- npx -y agentdocs@latest";
+const NPM_URL = "https://www.npmjs.com/package/@titov-d/agentdocs";
+const INSTALL_CMD = "claude mcp add agentdocs -- npx -y @titov-d/agentdocs@latest";
 const CLIENT_JSON = `{
   "mcpServers": {
     "agentdocs": {
       "command": "npx",
-      "args": ["-y", "agentdocs@latest"]
+      "args": ["-y", "@titov-d/agentdocs@latest"]
     }
   }
 }`;

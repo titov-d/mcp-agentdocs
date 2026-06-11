@@ -12,7 +12,7 @@
     {
       "registryType": "npm",
       "registryBaseUrl": "https://registry.npmjs.org",
-      "identifier": "agentdocs",
+      "identifier": "@titov-d/agentdocs",
       "version": "0.1.0",
       "transport": { "type": "stdio" }
     }
