@@ -6,6 +6,7 @@ import { getFreshness, formatDate } from "@/lib/data";
 export const revalidate = 3600;
 
 const REPO_URL = "https://github.com/titov-d/agentdocs";
+const GITHUB_PROFILE = "https://github.com/titov-d";
 const NPM_URL = "https://www.npmjs.com/package/agentdocs";
 const INSTALL_CMD = "claude mcp add agentdocs -- npx -y agentdocs@latest";
 const CLIENT_JSON = `{
@@ -247,7 +248,7 @@ export default async function Page() {
                 <span className="inline-block h-2.5 w-2.5 rounded-sm bg-accent" />
                 agentdocs
               </a>
-              <p className="mt-3.5 text-[14.5px] text-fg-soft">Built by Dmitry Titov — building software since 2010.</p>
+              <p className="mt-3.5 text-[14.5px] text-fg-soft">Built by <a href={GITHUB_PROFILE} className="text-fg underline decoration-border underline-offset-2 transition hover:text-accent hover:decoration-accent">Dmitry Titov</a> — building software since 2010.</p>
             </div>
             <div className="flex items-center gap-6 font-mono text-[13.5px]">
               <a href={REPO_URL} className="text-fg-soft no-underline hover:text-accent">GitHub repo ↗</a>
