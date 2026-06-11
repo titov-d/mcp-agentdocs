@@ -1,0 +1,10 @@
+node_modules/
+.next/
+out/
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+next-env.d.ts
+# generated at build by scripts/sync-data.mjs from the package corpus
+data/freshness.json

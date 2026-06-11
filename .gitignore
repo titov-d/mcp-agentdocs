@@ -6,3 +6,12 @@ dist/
 .env.*
 *.tgz
 coverage/
+
+# Internal working docs — NEVER publish (kept local only)
+/CLAUDE.md
+/docs/
+/corpus/_verification/
+
+# Local release tooling (kept out of the public repo by design)
+/scripts/preflight.mjs
+/PREFLIGHT.md

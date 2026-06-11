@@ -60,8 +60,8 @@ npm run ingest     # refresh sources into corpus/_staging/ for human review
 
 Curation is the point: `npm run ingest` fetches upstream sources for review but never
 silently overwrites a curated doc — a human diffs, promotes, and sets `verified: true`
-in `corpus/manifest.json` only after checking the content against its source. See
-`docs/ARCHITECTURE_STANDARDS.md`.
+in `corpus/manifest.json` only after checking the content against its source. Run
+`npm run check-freshness` to flag docs that have drifted or are due for re-verification.
 
 ## License
 
