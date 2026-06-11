@@ -81,14 +81,17 @@ Connect multiple servers by listing several `mcp_servers` + one `mcp_toolset` ea
 large tool sets, enable `defer_loading` with the Tool search tool. `mcp_servers` is also
 supported in the Message Batches API (priced the same).
 
-## Client-side MCP helpers (TypeScript only)
+## Client-side MCP helpers
 
-If you manage your own MCP client (local stdio servers, MCP prompts, or resources), the
-Anthropic TypeScript SDK provides helpers in `@anthropic-ai/sdk/helpers/beta/mcp`:
-`mcpTools(tools, mcpClient)` (→ Claude API tools for the tool runner), `mcpMessages(...)`,
-`mcpResourceToContent(...)`, `mcpResourceToFile(...)`. Use the `mcp_servers` API parameter
-for remote URL servers with tool-only needs; use the helpers for local servers, prompts,
-resources, or finer control. They throw `UnsupportedMCPValueError` on unsupported values.
+If you manage your own MCP client connection (local stdio servers, MCP prompts, or resources),
+the Anthropic SDKs provide helpers that convert between MCP types and Claude API types. In the
+TypeScript SDK they live in `@anthropic-ai/sdk/helpers/beta/mcp`: `mcpTools(tools, mcpClient)`
+(→ Claude API tools for the tool runner), `mcpMessages(...)`, `mcpResourceToContent(...)`,
+`mcpResourceToFile(...)`, and they throw `UnsupportedMCPValueError` on unsupported values. Use
+the `mcp_servers` API parameter for remote URL servers with tool-only needs; use the helpers for
+local servers, prompts, resources, or finer control. Available in the Python, TypeScript, Java,
+Go, Ruby, and PHP SDKs (not yet C#) — import the equivalent helpers per language (e.g. Python
+`anthropic.lib.tools.mcp`, Go `anthropic-sdk-go/mcp`).
 
 ## Remote third-party MCP servers
 
