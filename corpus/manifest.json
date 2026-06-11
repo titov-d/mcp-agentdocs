@@ -71,6 +71,16 @@
       "verified": true,
       "verifiedAt": "2026-06-11",
       "file": "mcp-authorization.md"
+    },
+    {
+      "id": "claude-mcp-connector",
+      "title": "Claude API MCP connector — connect remote MCP servers",
+      "topic": "claude-mcp",
+      "sourceUrl": "https://platform.claude.com/docs/en/agents-and-tools/mcp-connector",
+      "fetchedAt": "2026-06-11",
+      "verified": true,
+      "verifiedAt": "2026-06-11",
+      "file": "claude-mcp-connector.md"
     }
   ]
 }
