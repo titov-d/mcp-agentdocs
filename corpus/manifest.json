@@ -1,0 +1,56 @@
+{
+  "version": "2025-11-25",
+  "generatedAt": "2026-06-11",
+  "docs": [
+    {
+      "id": "mcp-transports",
+      "title": "MCP Transports — stdio & Streamable HTTP",
+      "topic": "mcp",
+      "sourceUrl": "https://modelcontextprotocol.io/specification/2025-11-25/basic/transports",
+      "fetchedAt": "2026-06-11",
+      "verified": true,
+      "verifiedAt": "2026-06-11",
+      "file": "mcp-transports.md"
+    },
+    {
+      "id": "mcp-ts-server-quickstart",
+      "title": "Build an MCP Server in TypeScript (stdio)",
+      "topic": "mcp",
+      "sourceUrl": "https://modelcontextprotocol.io/docs/develop/build-server",
+      "fetchedAt": "2026-06-11",
+      "verified": true,
+      "verifiedAt": "2026-06-11",
+      "file": "mcp-ts-server-quickstart.md"
+    },
+    {
+      "id": "mcp-tools",
+      "title": "MCP Tools — tools/list, tools/call, results & schemas",
+      "topic": "mcp",
+      "sourceUrl": "https://modelcontextprotocol.io/specification/2025-11-25/server/tools",
+      "fetchedAt": "2026-06-11",
+      "verified": true,
+      "verifiedAt": "2026-06-11",
+      "file": "mcp-tools.md"
+    },
+    {
+      "id": "mcp-lifecycle",
+      "title": "MCP Lifecycle — initialize, version & capability negotiation",
+      "topic": "mcp",
+      "sourceUrl": "https://modelcontextprotocol.io/specification/2025-11-25/basic/lifecycle",
+      "fetchedAt": "2026-06-11",
+      "verified": true,
+      "verifiedAt": "2026-06-11",
+      "file": "mcp-lifecycle.md"
+    },
+    {
+      "id": "mcp-resources",
+      "title": "MCP Resources — list/read/templates/subscribe & URI schemes",
+      "topic": "mcp",
+      "sourceUrl": "https://modelcontextprotocol.io/specification/2025-11-25/server/resources",
+      "fetchedAt": "2026-06-11",
+      "verified": true,
+      "verifiedAt": "2026-06-11",
+      "file": "mcp-resources.md"
+    }
+  ]
+}

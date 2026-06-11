@@ -1,0 +1,48 @@
+{
+  "name": "agentdocs",
+  "version": "0.1.0",
+  "description": "Fresh, curated, source-verified docs for building MCP servers and Claude agents — served to your AI coding agent over MCP.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "agentdocs": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "corpus/manifest.json",
+    "corpus/*.md",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "ingest": "tsx scripts/ingest.ts",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "agents",
+    "documentation",
+    "ai",
+    "cursor",
+    "claude-code"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^4.1.8"
+  }
+}
