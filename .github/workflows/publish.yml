@@ -1,0 +1,27 @@
+name: publish
+
+# Dormant until both exist: a `v*` git tag and an NPM_TOKEN repo secret.
+# Publishing the corpus update is the event that refreshes the website (the
+# landing reads the published manifest via jsDelivr), so we purge the CDN here.
+
+on:
+  push:
+    tags: ["v*"]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          registry-url: "https://registry.npmjs.org"
+      - run: npm ci
+      - run: npm run build && npm test
+      - run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Purge jsDelivr cache
+        run: curl -sS "https://purge.jsdelivr.net/npm/agentdocs@latest/corpus/manifest.json" || true

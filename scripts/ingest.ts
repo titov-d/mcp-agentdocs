@@ -13,6 +13,7 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { toMarkdownUrl, fetchSourceText } from "./source.js";
 
 interface DocMeta {
   id: string;
@@ -27,12 +28,6 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const corpus = join(root, "corpus");
 const staging = join(corpus, "_staging");
 
-/** modelcontextprotocol.io serves clean markdown at the `.md` suffix. */
-function toMarkdownUrl(url: string): string {
-  if (url.includes("modelcontextprotocol.io") && !url.endsWith(".md")) return `${url}.md`;
-  return url;
-}
-
 async function main(): Promise<void> {
   const manifest = JSON.parse(readFileSync(join(corpus, "manifest.json"), "utf8")) as Manifest;
   mkdirSync(staging, { recursive: true });
@@ -41,12 +36,13 @@ async function main(): Promise<void> {
   for (const doc of manifest.docs) {
     const url = toMarkdownUrl(doc.sourceUrl);
     process.stderr.write(`fetching ${doc.id} <- ${url}\n`);
-    const res = await fetch(url);
-    if (!res.ok) {
-      process.stderr.write(`  ! ${res.status} ${res.statusText} — skipped\n`);
+    let fresh: string;
+    try {
+      fresh = (await fetchSourceText(url)).trim();
+    } catch (err) {
+      process.stderr.write(`  ! ${String(err)} — skipped\n`);
       continue;
     }
-    const fresh = (await res.text()).trim();
     const stagePath = join(staging, doc.file);
     writeFileSync(stagePath, fresh + "\n", "utf8");
 

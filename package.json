@@ -11,7 +11,8 @@
     "dist",
     "corpus/manifest.json",
     "corpus/*.md",
-    "README.md"
+    "README.md",
+    "CHANGELOG.md"
   ],
   "engines": {
     "node": ">=18"
@@ -23,6 +24,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "ingest": "tsx scripts/ingest.ts",
+    "check-freshness": "tsx scripts/check-freshness.ts",
+    "seed-sources": "tsx scripts/check-freshness.ts --seed",
     "prepublishOnly": "npm run build && npm test"
   },
   "keywords": [

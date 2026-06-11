@@ -8,6 +8,12 @@ export const SERVER_VERSION = "0.1.0";
 
 /** Retrieval tuning. */
 export const MAX_RESULTS = 8;
+
+/**
+ * Freshness policy: a doc must be re-verified against its source at least this
+ * often, even if the source hasn't changed. Used by scripts/check-freshness.ts.
+ */
+export const MAX_VERIFIED_AGE_DAYS = 30;
 /** Characters of context shown around the first match in a snippet. */
 export const SNIPPET_RADIUS = 240;
 
