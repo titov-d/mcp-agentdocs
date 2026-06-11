@@ -5,7 +5,7 @@ import { getFreshness, formatDate } from "@/lib/data";
 
 export const revalidate = 3600;
 
-const REPO_URL = "https://github.com/colibrithemes/agentdocs";
+const REPO_URL = "https://github.com/titov-d/agentdocs";
 const NPM_URL = "https://www.npmjs.com/package/agentdocs";
 const INSTALL_CMD = "claude mcp add agentdocs -- npx -y agentdocs@latest";
 const CLIENT_JSON = `{
@@ -247,7 +247,7 @@ export default async function Page() {
                 <span className="inline-block h-2.5 w-2.5 rounded-sm bg-accent" />
                 agentdocs
               </a>
-              <p className="mt-3.5 text-[14.5px] text-fg-soft">Built by ColibriThemes — building software since 2010.</p>
+              <p className="mt-3.5 text-[14.5px] text-fg-soft">Built by Dmitry Titov — building software since 2010.</p>
             </div>
             <div className="flex items-center gap-6 font-mono text-[13.5px]">
               <a href={REPO_URL} className="text-fg-soft no-underline hover:text-accent">GitHub repo ↗</a>
@@ -255,7 +255,7 @@ export default async function Page() {
             </div>
           </div>
           <div className="border-t border-border-soft">
-            <div className="mx-auto max-w-[1120px] px-6 py-[18px] font-mono text-[12.5px] text-fg-mute">© 2026 ColibriThemes. Open source.</div>
+            <div className="mx-auto max-w-[1120px] px-6 py-[18px] font-mono text-[12.5px] text-fg-mute">© 2026 Dmitry Titov. Open source.</div>
           </div>
         </footer>
       </main>

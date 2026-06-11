@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Fresh, curated, source-verified docs for building MCP servers and Claude agents — served to your AI coding agent over MCP.",
   "license": "MIT",
-  "author": "ColibriThemes",
+  "author": "Dmitry Titov",
   "type": "module",
   "bin": {
     "agentdocs": "dist/index.js"
