@@ -51,6 +51,26 @@
       "verified": true,
       "verifiedAt": "2026-06-11",
       "file": "mcp-resources.md"
+    },
+    {
+      "id": "mcp-prompts",
+      "title": "MCP Prompts — prompts/list, prompts/get, message content",
+      "topic": "mcp",
+      "sourceUrl": "https://modelcontextprotocol.io/specification/2025-11-25/server/prompts",
+      "fetchedAt": "2026-06-11",
+      "verified": true,
+      "verifiedAt": "2026-06-11",
+      "file": "mcp-prompts.md"
+    },
+    {
+      "id": "mcp-authorization",
+      "title": "MCP Authorization — OAuth 2.1 for HTTP transports",
+      "topic": "mcp",
+      "sourceUrl": "https://modelcontextprotocol.io/specification/2025-11-25/basic/authorization",
+      "fetchedAt": "2026-06-11",
+      "verified": true,
+      "verifiedAt": "2026-06-11",
+      "file": "mcp-authorization.md"
     }
   ]
 }
