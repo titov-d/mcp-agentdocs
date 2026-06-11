@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Fresh, curated, source-verified docs for building MCP servers and Claude agents — served to your AI coding agent over MCP.",
   "license": "MIT",
+  "author": "ColibriThemes",
   "type": "module",
   "bin": {
     "agentdocs": "dist/index.js"
@@ -12,7 +13,8 @@
     "corpus/manifest.json",
     "corpus/*.md",
     "README.md",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "LICENSE"
   ],
   "engines": {
     "node": ">=18"
