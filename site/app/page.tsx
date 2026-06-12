@@ -5,7 +5,7 @@ import { getFreshness, formatDate } from "@/lib/data";
 
 export const revalidate = 3600;
 
-const REPO_URL = "https://github.com/titov-d/agentdocs";
+const REPO_URL = "https://github.com/titov-d/mcp-agentdocs";
 const GITHUB_PROFILE = "https://github.com/titov-d";
 const NPM_URL = "https://www.npmjs.com/package/mcp-agentdocs";
 const INSTALL_CMD = "claude mcp add agentdocs -- npx -y mcp-agentdocs@latest";
