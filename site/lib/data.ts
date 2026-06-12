@@ -51,7 +51,15 @@ function parseChangelog(md: string): ChangelogEntry[] {
       continue;
     }
     const b = line.match(/^\s*-\s+(.*\S)/);
-    if (b && cur) cur.items.push((b[1] ?? "").trim());
+    if (b && cur) {
+      cur.items.push((b[1] ?? "").trim());
+      continue;
+    }
+    // join a wrapped bullet's continuation line (indented, non-empty, not a heading)
+    const cont = line.match(/^\s+(\S.*)$/);
+    if (cont && cur && cur.items.length && !line.startsWith("#")) {
+      cur.items[cur.items.length - 1] += " " + (cont[1] ?? "").trim();
+    }
   }
   return entries;
 }
