@@ -192,7 +192,7 @@ export default async function Page() {
                     changelogRows.map((row, i) => (
                       <div key={i} className={`flex gap-4 py-[13px] ${i < changelogRows.length - 1 ? "border-b border-border" : ""}`}>
                         <span className="w-[90px] flex-none font-mono text-[12.5px] text-accent">{row.date}</span>
-                        <span className="text-[14.5px] leading-snug text-fg-soft">{row.text}</span>
+                        <span className="text-[14.5px] leading-snug text-fg-soft">{row.text.replace(/[*`]/g, "")}</span>
                       </div>
                     ))
                   )}
