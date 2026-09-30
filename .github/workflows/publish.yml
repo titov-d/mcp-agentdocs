@@ -4,9 +4,12 @@ name: publish
 # Publishing the corpus update is the event that refreshes the website (the
 # landing reads the published manifest via jsDelivr), so we purge the CDN here.
 
+# devflow ci.hosted-manual-only (DVF-66): automatic triggers off — the gate runs on the owner's Mac (devflow skill ci). Was:
+# on:
+#   push:
+#     tags: ["v*"]
 on:
-  push:
-    tags: ["v*"]
+  workflow_dispatch:
 
 jobs:
   publish:

@@ -4,9 +4,12 @@ name: freshness-check
 # GitHub issue when any corpus doc needs re-verification. Verification itself is
 # a human step — this never edits the corpus.
 
+# devflow ci.hosted-manual-only (DVF-66): automatic triggers off — the gate runs on the owner's Mac (devflow skill ci). Was:
+# on:
+#   schedule:
+#     - cron: "0 9 * * 1" # Mondays 09:00 UTC
+#   workflow_dispatch: {}
 on:
-  schedule:
-    - cron: "0 9 * * 1" # Mondays 09:00 UTC
   workflow_dispatch: {}
 
 permissions:
